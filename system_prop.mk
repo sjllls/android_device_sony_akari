@@ -142,3 +142,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+# DEBUG
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.adb.enable=1  \
+    persist.service.debuggable=1  \
+    persist.sys.usb.config=mtp,adb 
