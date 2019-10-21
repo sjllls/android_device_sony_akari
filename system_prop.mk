@@ -113,9 +113,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.semc.product.model=H8266 \
     ro.semc.ms_type_id=PM-1118-BV \
     ro.semc.version.fs=GENERIC \
-    ro.semc.product.name=Xperia XZ2 \
     ro.semc.product.device=H82 \
-    ro.semc.version.fs_revision=52.0.A.8.131
+    ro.semc.version.fs_revision=52.0.A.8.131 \
+    ro.semc.version.sw=1311-7920 \
+    ro.semc.version.sw_revision=52.0.A.8.131 \
+    ro.semc.version.sw_variant=GLOBAL4GB-C2 \
+    ro.semc.version.sw_type=user \
 
 #system prop for Bluetooth SOC type
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -147,4 +150,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.service.adb.enable=1  \
     persist.service.debuggable=1  \
-    persist.sys.usb.config=mtp,adb 
+    persist.sys.usb.config=mtp,adb \
+    ro.vendor.usb.vid=0FCE \
+    ro.vendor.usb.pid_suffix=1FA
