@@ -40,13 +40,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SOMC
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.semc.product.model=H8266 \
-    ro.semc.ms_type_id=PM-1118-BV \
+    ro.semc.product.model=H8296 \
+    ro.semc.ms_type_id=PM-1119-BV \
     ro.semc.version.fs=GENERIC \
     ro.semc.product.device=H82 \
-    ro.semc.version.fs_revision=52.0.A.8.131 \
+    ro.semc.version.fs_revision=52.1.A.0.532 \
     ro.semc.version.sw=1311-7920 \
-    ro.semc.version.sw_revision=52.0.A.8.131 \
+    ro.semc.version.sw_revision=52.1.A.0.532 \
     ro.semc.version.sw_variant=GLOBAL4GB-C2 \
     ro.semc.version.sw_type=user \
 
