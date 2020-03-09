@@ -24,14 +24,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Kernel
 TARGET_BOOTLOADER_BOARD_NAME := H8266
-# TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-TARGET_KERNEL_CONFIG := lineage_sony_tama_akari_defconfig
-TARGET_KERNEL_SOURCE := kernel/sony/sdm845
-# TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-endif
+TARGET_KERNEL_CONFIG := akari_defconfig
 
 # Selinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
