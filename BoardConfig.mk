@@ -23,8 +23,6 @@ DEVICE_PATH := device/sony/akari
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Kernel
-TARGET_BOOTLOADER_BOARD_NAME := H8266
-
 TARGET_KERNEL_CONFIG := akari_defconfig
 
 # Selinux
