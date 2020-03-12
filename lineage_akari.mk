@@ -28,7 +28,7 @@ PRODUCT_NAME := lineage_akari
 PRODUCT_DEVICE := akari
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := H8296
+PRODUCT_MODEL := H8266
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
@@ -38,6 +38,6 @@ TARGET_VENDOR_DEVICE_NAME := akari_dsds
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="akari_dsds" \
     PRODUCT_NAME="akari_dsds" \
-    PRIVATE_BUILD_DESC="akari_dsds-user 9 TAMA2-2.0.1-190723-0047 1 dev-keys"
+    PRIVATE_BUILD_DESC="akari_dsds-user 9 TAMA2-2.0.1-191021-1837 1 dev-keys"
 
-BUILD_FINGERPRINT := Sony/akari_dsds/akari_dsds:9/TAMA2-2.0.1-190614-0634/1:user/dev-keys
+BUILD_FINGERPRINT := Sony/akari_dsds/akari_dsds:9/TAMA2-2.0.1-191021-1837/1:user/dev-keys
