@@ -39,17 +39,23 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
+ALLOW_MISSING_DEPENDENCIES=true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm845
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
+BOARD_BOOTIMG_HEADER_VERSION := 1
+BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true loop.max_part=7 androidboot.usbcontroller=a600000.dwc3 oemboot.earlymount=/dev/block/platform/soc/1d84000.ufshc/by-name/oem:/mnt/oem:ext4:ro,barrier=1:wait,slotselect,first_stage_mount panic_on_err=1 loop.max_part=7 msm_drm.dsi_display0=dsi_panel_cmd_display:config0
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
+BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_PREBUILT_KERNEL := device/sony/akari/prebuilt/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := device/sony/akari/prebuilt/recovery_dtbo
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
@@ -73,8 +79,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_NO_KERNEL := false
 TARGET_NO_RECOVERY := false
-BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+AB_OTA_UPDATER := false
 
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/sony/akari/recovery.wipe

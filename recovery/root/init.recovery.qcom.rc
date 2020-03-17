@@ -49,6 +49,13 @@ service sbinqseecomd /sbin/qseecomd
     disabled
     seclabel u:r:recovery:s0
 
+service permissive /sbin/permissive.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
 service prepdecrypt /sbin/prepdecrypt.sh
     oneshot
     disabled
@@ -131,6 +138,7 @@ on init
     start prepdecrypt
     start time_daemon
     setprop crypto.ready 1
+    start permissive
 
 on property:crypto.ready=0
     stop sbinqseecomd
