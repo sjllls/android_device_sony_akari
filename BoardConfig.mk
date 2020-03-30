@@ -23,7 +23,7 @@ DEVICE_PATH := device/sony/akari
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Kernel
-TARGET_KERNEL_CONFIG := akari_defconfig
+TARGET_KERNEL_CONFIG := tama_akari_defconfig
 
 # Selinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
