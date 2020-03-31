@@ -40,5 +40,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+# VNDK-SP
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 # Inherit from sony tama-common
 $(call inherit-product, device/sony/tama-common/common.mk)

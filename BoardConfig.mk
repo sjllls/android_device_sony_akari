@@ -32,5 +32,8 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Reserve space for data encryption (44712771584-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 44712755200
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := true
+
 # inherit from the proprietary version
 -include vendor/sony/akari/BoardConfigVendor.mk
