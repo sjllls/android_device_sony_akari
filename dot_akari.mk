@@ -7,10 +7,11 @@
 # Inherit from akari device
 $(call inherit-product, device/sony/akari/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DotOS stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/dot/config/common.mk)
 
-PRODUCT_NAME := lineage_akari
+PRODUCT_NAME := dot_akari
 PRODUCT_DEVICE := akari
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
